@@ -18,7 +18,7 @@
 #include <math.h>
 
 int main(void);
-void unitTest(float photoDiodeResult);
+int unitTest(float photoDiodeResult);
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 

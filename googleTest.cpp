@@ -17,7 +17,7 @@ TEST_F(PhotodiodeLimitTest, LimitADC_0){
     float photoDiodeResult = 0;
     int timeENAMeasure;
     //ACT
-    unitTest(photoDiodeResult);
+    timeENAMeasure = unitTest(photoDiodeResult);
     //ASSERT
     EXPECT_FLOAT_EQ(1, timeENAMeasure);
 }
@@ -27,7 +27,7 @@ TEST_F(PhotodiodeLimitTest, LimitADC_255){
     float photoDiodeResult = 255;
     int timeENAMeasure;
     //ACT
-    unitTest(photoDiodeResult);
+    timeENAMeasure = unitTest(photoDiodeResult);
     //ASSERT
     EXPECT_FLOAT_EQ(110, timeENAMeasure);
 }
@@ -37,7 +37,7 @@ TEST_F(PhotodiodeLimitTest, LimitADC_255_Fail){
     float photoDiodeResult = 255;
     int timeENAMeasure;
     //ACT
-    unitTest(photoDiodeResult);
+    timeENAMeasure = unitTest(photoDiodeResult);
     //ASSERT
     EXPECT_FLOAT_EQ(120, timeENAMeasure);
 }

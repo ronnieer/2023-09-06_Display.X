@@ -25,7 +25,7 @@ int main(void){
 ================================================================================ 
 */
 
-void unitTest(float photoDiodeResult){
+int unitTest(float photoDiodeResult){
     
     //float photoDiodeResult;
     //int timeENA; 
@@ -50,6 +50,6 @@ void unitTest(float photoDiodeResult){
         timeENAReference += 2;
         optimise = true;
     }
-
+    return timeENAMeasure;
 }
 
