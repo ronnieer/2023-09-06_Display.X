@@ -8,8 +8,8 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef general_data_header_H
-#define	general_data_header_H
+#ifndef DiodTest_H
+#define	DiodTest_H
 
 #include <stdbool.h>
 #include <string.h>

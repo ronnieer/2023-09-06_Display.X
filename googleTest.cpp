@@ -32,6 +32,16 @@ TEST_F(PhotodiodeLimitTest, LimitADC_255){
     EXPECT_EQ(110, timeENAMeasure);
 }
 
+TEST_F(PhotodiodeLimitTest, LimitADC_0_Fail){
+    //ARRANGE
+    float photoDiodeResult = 255;
+    int timeENAMeasure;
+    //ACT
+    timeENAMeasure = unitTest(photoDiodeResult);
+    //ASSERT
+    EXPECT_EQ(0, timeENAMeasure);
+}
+
 TEST_F(PhotodiodeLimitTest, LimitADC_255_Fail){
     //ARRANGE
     float photoDiodeResult = 255;
@@ -39,7 +49,7 @@ TEST_F(PhotodiodeLimitTest, LimitADC_255_Fail){
     //ACT
     timeENAMeasure = unitTest(photoDiodeResult);
     //ASSERT
-    EXPECT_EQ(120, timeENAMeasure);
+    EXPECT_EQ(111, timeENAMeasure);
 }
 
 // TEST_F(FizzbuzzTest2, FractionByThreeAndFiveWithNoRest){
