@@ -1,5 +1,5 @@
 PROG=DiodTest.exe
-SOURCES=DiodTest.c
+SOURCES=DiodTest.c main.c
 DEPS=DiodTest.h
 CC=gcc
 CFLAGS=-Wall -Werror
