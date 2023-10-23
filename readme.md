@@ -35,4 +35,4 @@ Test 4:
 
 FELFALL - SKA GÅ FEL
 
-LimitADC_255_Fail - Testet verifierar att variabeln "timeENAMeasure" inte når 111. "timeENAMeasure" genererar så småningom "timeENA", som till slut matas in till timer 1, som i sin tur styr hur länge displayens aktuella data ska ligga ute. Rutinen som statar denna process heter "displayENA((unsigned char)timeENA)". Displayen blir flimrig då tiden för timer 1 blir för lång
+LimitADC_255_Fail - Testet verifierar att variabeln "timeENAMeasure" inte når 111. "timeENAMeasure" genererar så småningom "timeENA", som till slut matas in till timer 1, som i sin tur styr hur länge displayens aktuella data ska ligga ute. Rutinen som statar denna process heter "displayENA((unsigned char)timeENA)". Displayen blir flimrig då tiden för timer 1 blir för lång.
